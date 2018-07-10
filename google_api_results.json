@@ -1,0 +1,426 @@
+{
+ "kind": "customsearch#search",
+ "url": {
+  "type": "application/json",
+  "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+ },
+ "queries": {
+  "request": [
+   {
+    "title": "Google Custom Search - not over you",
+    "totalResults": "58300",
+    "searchTerms": "not over you",
+    "count": 10,
+    "startIndex": 1,
+    "inputEncoding": "utf8",
+    "outputEncoding": "utf8",
+    "safe": "off",
+    "cx": "004866776918846137660:g-xyfvdi1va"
+   }
+  ],
+  "nextPage": [
+   {
+    "title": "Google Custom Search - not over you",
+    "totalResults": "58300",
+    "searchTerms": "not over you",
+    "count": 10,
+    "startIndex": 11,
+    "inputEncoding": "utf8",
+    "outputEncoding": "utf8",
+    "safe": "off",
+    "cx": "004866776918846137660:g-xyfvdi1va"
+   }
+  ]
+ },
+ "context": {
+  "title": "azlyrics"
+ },
+ "searchInformation": {
+  "searchTime": 0.11295,
+  "formattedSearchTime": "0.11",
+  "totalResults": "58300",
+  "formattedTotalResults": "58,300"
+ },
+ "items": [
+  {
+   "kind": "customsearch#result",
+   "title": "Gavin DeGraw Lyrics - Not Over You",
+   "htmlTitle": "Gavin DeGraw Lyrics - \u003cb\u003eNot Over You\u003c/b\u003e",
+   "link": "https://www.azlyrics.com/lyrics/gavindegraw/notoveryou.html",
+   "displayLink": "www.azlyrics.com",
+   "snippet": "Lyrics to \"Not Over You\" song by Gavin DeGraw: Dreams, that's where I have to \ngo To see your beautiful face anymore I stare at a picture of you and...",
+   "htmlSnippet": "Lyrics to &quot;\u003cb\u003eNot Over You\u003c/b\u003e&quot; song by Gavin DeGraw: Dreams, that&#39;s where I have to \u003cbr\u003e\ngo To see your beautiful face anymore I stare at a picture of you and...",
+   "formattedUrl": "https://www.azlyrics.com/lyrics/gavindegraw/notoveryou.html",
+   "htmlFormattedUrl": "https://www.azlyrics.com/lyrics/gavindegraw/\u003cb\u003enotoveryou\u003c/b\u003e.html",
+   "pagemap": {
+    "metatags": [
+     {
+      "viewport": "width=device-width, initial-scale=1",
+      "og:image": "//www.azlyrics.com/az_logo_tr.png"
+     }
+    ],
+    "listitem": [
+     {
+      "item": "AZLyrics",
+      "name": "AZLyrics"
+     },
+     {
+      "item": "G",
+      "name": "G"
+     },
+     {
+      "item": "Gavin DeGraw Lyrics",
+      "name": "Gavin DeGraw Lyrics"
+     }
+    ],
+    "cse_image": [
+     {
+      "src": "//www.azlyrics.com/az_logo_tr.png"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Molly Kate Kestner Lyrics - Not Over You",
+   "htmlTitle": "Molly Kate Kestner Lyrics - \u003cb\u003eNot Over You\u003c/b\u003e",
+   "link": "https://www.azlyrics.com/lyrics/mollykatekestner/notoveryou.html",
+   "displayLink": "www.azlyrics.com",
+   "snippet": "Lyrics to \"Not Over You\" song by Molly Kate Kestner: Over, over, over You said \nthat you don't like how I dress Now you don't like my new friends (No, no...",
+   "htmlSnippet": "Lyrics to &quot;\u003cb\u003eNot Over You\u003c/b\u003e&quot; song by Molly Kate Kestner: Over, over, over You said \u003cbr\u003e\nthat you don&#39;t like how I dress Now you don&#39;t like my new friends (No, no...",
+   "formattedUrl": "https://www.azlyrics.com/lyrics/mollykatekestner/notoveryou.html",
+   "htmlFormattedUrl": "https://www.azlyrics.com/lyrics/mollykatekestner/\u003cb\u003enotoveryou\u003c/b\u003e.html",
+   "pagemap": {
+    "metatags": [
+     {
+      "viewport": "width=device-width, initial-scale=1",
+      "og:image": "//www.azlyrics.com/az_logo_tr.png"
+     }
+    ],
+    "listitem": [
+     {
+      "item": "AZLyrics",
+      "name": "AZLyrics"
+     },
+     {
+      "item": "M",
+      "name": "M"
+     },
+     {
+      "item": "Molly Kate Kestner Lyrics",
+      "name": "Molly Kate Kestner Lyrics"
+     }
+    ],
+    "cse_image": [
+     {
+      "src": "//www.azlyrics.com/az_logo_tr.png"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Tessa Violet Lyrics - Not Over You",
+   "htmlTitle": "Tessa Violet Lyrics - \u003cb\u003eNot Over You\u003c/b\u003e",
+   "link": "https://www.azlyrics.com/lyrics/tessaviolet/notoveryou.html",
+   "displayLink": "www.azlyrics.com",
+   "snippet": "Lyrics to \"Not Over You\" song by Tessa Violet: You call me up Say that you've \nbeen busy But something made you just reach out And we meet up Tell e...",
+   "htmlSnippet": "Lyrics to &quot;\u003cb\u003eNot Over You\u003c/b\u003e&quot; song by Tessa Violet: You call me up Say that you&#39;ve \u003cbr\u003e\nbeen busy But something made you just reach out And we meet up Tell e...",
+   "formattedUrl": "https://www.azlyrics.com/lyrics/tessaviolet/notoveryou.html",
+   "htmlFormattedUrl": "https://www.azlyrics.com/lyrics/tessaviolet/\u003cb\u003enotoveryou\u003c/b\u003e.html",
+   "pagemap": {
+    "metatags": [
+     {
+      "viewport": "width=device-width, initial-scale=1",
+      "og:image": "//www.azlyrics.com/az_logo_tr.png"
+     }
+    ],
+    "listitem": [
+     {
+      "item": "AZLyrics",
+      "name": "AZLyrics"
+     },
+     {
+      "item": "T",
+      "name": "T"
+     },
+     {
+      "item": "Tessa Violet Lyrics",
+      "name": "Tessa Violet Lyrics"
+     }
+    ],
+    "cse_image": [
+     {
+      "src": "//www.azlyrics.com/az_logo_tr.png"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Simply Red Lyrics - So Not Over You",
+   "htmlTitle": "Simply Red Lyrics - So \u003cb\u003eNot Over You\u003c/b\u003e",
+   "link": "https://www.azlyrics.com/lyrics/simplyred/sonotoveryou.html",
+   "displayLink": "www.azlyrics.com",
+   "snippet": "Lyrics to \"So Not Over You\" song by Simply Red: Don't know why I still slept on \nmy side of the bed The emptiness when you were gone kept ringing in...",
+   "htmlSnippet": "Lyrics to &quot;So \u003cb\u003eNot Over You\u003c/b\u003e&quot; song by Simply Red: Don&#39;t know why I still slept on \u003cbr\u003e\nmy side of the bed The emptiness when you were gone kept ringing in...",
+   "formattedUrl": "https://www.azlyrics.com/lyrics/simplyred/sonotoveryou.html",
+   "htmlFormattedUrl": "https://www.azlyrics.com/lyrics/simplyred/so\u003cb\u003enotoveryou\u003c/b\u003e.html",
+   "pagemap": {
+    "metatags": [
+     {
+      "viewport": "width=device-width, initial-scale=1",
+      "og:image": "//www.azlyrics.com/az_logo_tr.png"
+     }
+    ],
+    "listitem": [
+     {
+      "item": "AZLyrics",
+      "name": "AZLyrics"
+     },
+     {
+      "item": "S",
+      "name": "S"
+     },
+     {
+      "item": "Simply Red Lyrics",
+      "name": "Simply Red Lyrics"
+     }
+    ],
+    "cse_image": [
+     {
+      "src": "//www.azlyrics.com/az_logo_tr.png"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Alex Goot Lyrics - Not Over You",
+   "htmlTitle": "Alex Goot Lyrics - \u003cb\u003eNot Over You\u003c/b\u003e",
+   "link": "https://www.azlyrics.com/lyrics/alexgoot/notoveryou.html",
+   "displayLink": "www.azlyrics.com",
+   "snippet": "Lyrics to \"Not Over You\" song by Alex Goot: Dreams, that's where I have to go to \nsee your beautiful Face, anymore I stare at a picture of you An...",
+   "htmlSnippet": "Lyrics to &quot;\u003cb\u003eNot Over You\u003c/b\u003e&quot; song by Alex Goot: Dreams, that&#39;s where I have to go to \u003cbr\u003e\nsee your beautiful Face, anymore I stare at a picture of you An...",
+   "formattedUrl": "https://www.azlyrics.com/lyrics/alexgoot/notoveryou.html",
+   "htmlFormattedUrl": "https://www.azlyrics.com/lyrics/alexgoot/\u003cb\u003enotoveryou\u003c/b\u003e.html",
+   "pagemap": {
+    "metatags": [
+     {
+      "viewport": "width=device-width, initial-scale=1",
+      "og:image": "//www.azlyrics.com/az_logo_tr.png"
+     }
+    ],
+    "listitem": [
+     {
+      "item": "AZLyrics",
+      "name": "AZLyrics"
+     },
+     {
+      "item": "A",
+      "name": "A"
+     },
+     {
+      "item": "Alex Goot Lyrics",
+      "name": "Alex Goot Lyrics"
+     }
+    ],
+    "cse_image": [
+     {
+      "src": "//www.azlyrics.com/az_logo_tr.png"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Nerina Pallot Lyrics - Not Over You",
+   "htmlTitle": "Nerina Pallot Lyrics - \u003cb\u003eNot Over You\u003c/b\u003e",
+   "link": "https://www.azlyrics.com/lyrics/nerinapallot/notoveryou.html",
+   "displayLink": "www.azlyrics.com",
+   "snippet": "Lyrics to \"Not Over You\" song by Nerina Pallot: I gave you all I had to give; I gave \nyou love I thought that it would be, and now it ain't so. And...",
+   "htmlSnippet": "Lyrics to &quot;\u003cb\u003eNot Over You\u003c/b\u003e&quot; song by Nerina Pallot: I gave you all I had to give; I gave \u003cbr\u003e\nyou love I thought that it would be, and now it ain&#39;t so. And...",
+   "formattedUrl": "https://www.azlyrics.com/lyrics/nerinapallot/notoveryou.html",
+   "htmlFormattedUrl": "https://www.azlyrics.com/lyrics/nerinapallot/\u003cb\u003enotoveryou\u003c/b\u003e.html",
+   "pagemap": {
+    "metatags": [
+     {
+      "viewport": "width=device-width, initial-scale=1",
+      "og:image": "//www.azlyrics.com/az_logo_tr.png"
+     }
+    ],
+    "listitem": [
+     {
+      "item": "AZLyrics",
+      "name": "AZLyrics"
+     },
+     {
+      "item": "N",
+      "name": "N"
+     },
+     {
+      "item": "Nerina Pallot Lyrics",
+      "name": "Nerina Pallot Lyrics"
+     }
+    ],
+    "cse_image": [
+     {
+      "src": "//www.azlyrics.com/az_logo_tr.png"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Matt Cardle Lyrics - Not Over You",
+   "htmlTitle": "Matt Cardle Lyrics - \u003cb\u003eNot Over You\u003c/b\u003e",
+   "link": "https://www.azlyrics.com/lyrics/mattcardle/notoveryou.html",
+   "displayLink": "www.azlyrics.com",
+   "snippet": "Lyrics to \"Not Over You\" song by Matt Cardle: I'm here in your shadow Broken on \nthe floor It will never be The way it was before I think you feel...",
+   "htmlSnippet": "Lyrics to &quot;\u003cb\u003eNot Over You\u003c/b\u003e&quot; song by Matt Cardle: I&#39;m here in your shadow Broken on \u003cbr\u003e\nthe floor It will never be The way it was before I think you feel...",
+   "formattedUrl": "https://www.azlyrics.com/lyrics/mattcardle/notoveryou.html",
+   "htmlFormattedUrl": "https://www.azlyrics.com/lyrics/mattcardle/\u003cb\u003enotoveryou\u003c/b\u003e.html",
+   "pagemap": {
+    "metatags": [
+     {
+      "viewport": "width=device-width, initial-scale=1",
+      "og:image": "//www.azlyrics.com/az_logo_tr.png"
+     }
+    ],
+    "listitem": [
+     {
+      "item": "AZLyrics",
+      "name": "AZLyrics"
+     },
+     {
+      "item": "M",
+      "name": "M"
+     },
+     {
+      "item": "Matt Cardle Lyrics",
+      "name": "Matt Cardle Lyrics"
+     }
+    ],
+    "cse_image": [
+     {
+      "src": "//www.azlyrics.com/az_logo_tr.png"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Rihanna Lyrics - P.S. (I'm Still Not Over You)",
+   "htmlTitle": "Rihanna Lyrics - P.S. (I&#39;m Still \u003cb\u003eNot Over You\u003c/b\u003e)",
+   "link": "https://www.azlyrics.com/lyrics/rihanna/psimstillnotoveryou.html",
+   "displayLink": "www.azlyrics.com",
+   "snippet": "Lyrics to \"P.S. (I'm Still Not Over You)\" song by Rihanna: Whats up? I know we \nhaven't spoken for a while But I was thinkin bout you And it kinda made me sm...",
+   "htmlSnippet": "Lyrics to &quot;P.S. (I&#39;m Still \u003cb\u003eNot Over You\u003c/b\u003e)&quot; song by Rihanna: Whats up? I know we \u003cbr\u003e\nhaven&#39;t spoken for a while But I was thinkin bout you And it kinda made me sm...",
+   "formattedUrl": "https://www.azlyrics.com/lyrics/rihanna/psimstillnotoveryou.html",
+   "htmlFormattedUrl": "https://www.azlyrics.com/lyrics/rihanna/psimstill\u003cb\u003enotoveryou\u003c/b\u003e.html",
+   "pagemap": {
+    "metatags": [
+     {
+      "viewport": "width=device-width, initial-scale=1",
+      "og:image": "//www.azlyrics.com/az_logo_tr.png"
+     }
+    ],
+    "listitem": [
+     {
+      "item": "AZLyrics",
+      "name": "AZLyrics"
+     },
+     {
+      "item": "R",
+      "name": "R"
+     },
+     {
+      "item": "Rihanna Lyrics",
+      "name": "Rihanna Lyrics"
+     }
+    ],
+    "cse_image": [
+     {
+      "src": "//www.azlyrics.com/az_logo_tr.png"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Mike Posner Lyrics - Still Not Over You",
+   "htmlTitle": "Mike Posner Lyrics - Still \u003cb\u003eNot Over You\u003c/b\u003e",
+   "link": "https://www.azlyrics.com/lyrics/mikeposner/stillnotoveryou.html",
+   "displayLink": "www.azlyrics.com",
+   "snippet": "Lyrics to \"Still Not Over You\" song by Mike Posner: I never knew I never knew that \neverything was falling through That after all these years I'd still b...",
+   "htmlSnippet": "Lyrics to &quot;Still \u003cb\u003eNot Over You\u003c/b\u003e&quot; song by Mike Posner: I never knew I never knew that \u003cbr\u003e\neverything was falling through That after all these years I&#39;d still b...",
+   "formattedUrl": "https://www.azlyrics.com/lyrics/mikeposner/stillnotoveryou.html",
+   "htmlFormattedUrl": "https://www.azlyrics.com/lyrics/mikeposner/still\u003cb\u003enotoveryou\u003c/b\u003e.html",
+   "pagemap": {
+    "metatags": [
+     {
+      "viewport": "width=device-width, initial-scale=1",
+      "og:image": "//www.azlyrics.com/az_logo_tr.png"
+     }
+    ],
+    "listitem": [
+     {
+      "item": "AZLyrics",
+      "name": "AZLyrics"
+     },
+     {
+      "item": "M",
+      "name": "M"
+     },
+     {
+      "item": "Mike Posner Lyrics",
+      "name": "Mike Posner Lyrics"
+     }
+    ],
+    "cse_image": [
+     {
+      "src": "//www.azlyrics.com/az_logo_tr.png"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Diana Ross Lyrics - Not Over You Yet",
+   "htmlTitle": "Diana Ross Lyrics - \u003cb\u003eNot Over You\u003c/b\u003e Yet",
+   "link": "https://www.azlyrics.com/lyrics/dianaross/notoveryouyet.html",
+   "displayLink": "www.azlyrics.com",
+   "snippet": "Lyrics to \"Not Over You Yet\" song by Diana Ross: Check it out You were the first \nwho ever brought me out Showed me what life and love was all about...",
+   "htmlSnippet": "Lyrics to &quot;\u003cb\u003eNot Over You\u003c/b\u003e Yet&quot; song by Diana Ross: Check it out You were the first \u003cbr\u003e\nwho ever brought me out Showed me what life and love was all about...",
+   "formattedUrl": "https://www.azlyrics.com/lyrics/dianaross/notoveryouyet.html",
+   "htmlFormattedUrl": "https://www.azlyrics.com/lyrics/dianaross/\u003cb\u003enotoveryou\u003c/b\u003eyet.html",
+   "pagemap": {
+    "metatags": [
+     {
+      "viewport": "width=device-width, initial-scale=1",
+      "og:image": "//www.azlyrics.com/az_logo_tr.png"
+     }
+    ],
+    "listitem": [
+     {
+      "item": "AZLyrics",
+      "name": "AZLyrics"
+     },
+     {
+      "item": "D",
+      "name": "D"
+     },
+     {
+      "item": "Diana Ross Lyrics",
+      "name": "Diana Ross Lyrics"
+     }
+    ],
+    "cse_image": [
+     {
+      "src": "//www.azlyrics.com/az_logo_tr.png"
+     }
+    ]
+   }
+  }
+ ]
+}

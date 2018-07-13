@@ -15,4 +15,3 @@ def search_lyrics():
 
 if __name__ == "__main__":
     app.run()
-

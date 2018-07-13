@@ -28,14 +28,12 @@ def youtube_search(options):
   # Call the search.list method to retrieve results matching the specified
   # query term.
   search_response = youtube.search().list(
-    q='Alan Walker Faded',
-    part='id,snippet',
+    q=options.q,
+    part='snippet',
     maxResults=options.max_results
   ).execute()
 
   videos = []
-  channels = []
-  playlists = []
 
   # Add each result to the appropriate list, and then display the lists of
   # matching videos, channels, and playlists.
@@ -43,22 +41,14 @@ def youtube_search(options):
     if search_result['id']['kind'] == 'youtube#video':
       videos.append('%s (%s)' % (search_result['snippet']['title'],
                                  search_result['id']['videoId']))
-    elif search_result['id']['kind'] == 'youtube#channel':
-      channels.append('%s (%s)' % (search_result['snippet']['title'],
-                                   search_result['id']['channelId']))
-    elif search_result['id']['kind'] == 'youtube#playlist':
-      playlists.append('%s (%s)' % (search_result['snippet']['title'],
-                                    search_result['id']['playlistId']))
 
   print 'Videos:\n', '\n'.join(videos), '\n'
-  print 'Channels:\n', '\n'.join(channels), '\n'
-  print 'Playlists:\n', '\n'.join(playlists), '\n'
 
 
 if __name__ == '__main__':
   parser = argparse.ArgumentParser()
-  parser.add_argument('--q', help='Search term', default='Google')
-  parser.add_argument('--max-results', help='Max results', default=25)
+  parser.add_argument('--q', help='Search term', default='Alan Walker Faded')
+  parser.add_argument('--max-results', help='Max results', default=5)
   args = parser.parse_args()
 
   try:

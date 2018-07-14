@@ -28,8 +28,8 @@ def search_lyrics():
         songs.append(d)
         youtube_query = song_name['artist'] + ' ' + song_name['title']
         print(youtube_query)
-        links.append(youtube_link_scraper.youtube_link(youtube_query))
-        print(youtube_link_scraper.youtube_link(youtube_query))
+        links.append(youtube_link_scraper.get_youtube_link(youtube_query))
+        print(youtube_link_scraper.get_youtube_link(youtube_query))
     
     print(links)
     return 'Top song: ' + songs[0]['title'] # TODO: Create template to return

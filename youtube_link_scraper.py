@@ -9,6 +9,3 @@ def get_youtube_link(query_input):
     search_results = re.findall(r'href=\"\/watch\?v=(.{11})', html_content.read().decode())
     return ("http://www.youtube.com/watch?v=" + search_results[0])
 
-
-# Test scraper
-print(get_youtube_link("Childish Gambino This is America"))

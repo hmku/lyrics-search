@@ -20,15 +20,16 @@ def search_lyrics():
     songs = []
 
     for song in results['items']:
-        song_name = util.split_name_str(song['title'])
-        youtube_query = song_name['artist'] + ' ' + song_name['title']
-        youtube_link = youtube_scraper.get_top_youtube_link(youtube_query)
+        artist, title = util.split_name_str(song['title'])
+        youtube_query = artist + ' ' + title
+        youtube_link, youtube_thumbnail = youtube_scraper.get_youtube_info(youtube_query)
         lyrics_snippet = snippet.get_snippet(query, song['link'])
         d = {
-            'title': song_name['title'],
-            'artist': song_name['artist'], 
+            'title': title,
+            'artist': artist, 
             'link': song['link'],
-            'youtube': youtube_link,
+            'youtube_link': youtube_link,
+            'thumbnail': youtube_thumbnail,
             'snippet': lyrics_snippet,
         }
         songs.append(d)

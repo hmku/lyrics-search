@@ -1,7 +1,8 @@
 from flask import Flask, render_template, request
 import engine
 import util
-import youtube_link_scraper
+import youtube_scraper
+import snippet
 
 
 app = Flask(__name__)
@@ -17,21 +18,22 @@ def search_lyrics():
     query = request.form['query']
     results = engine.get_search_results(query)
     songs = []
-    links = []
+
     for song in results['items']:
-        song_name = util.split_name_str(song['title'])
+        artist, title = util.split_name_str(song['title'])
+        youtube_query = artist + ' ' + title
+        youtube_link, youtube_thumbnail = youtube_scraper.get_youtube_info(youtube_query)
+        lyrics_snippet = snippet.get_snippet(query, song['link'])
         d = {
-            'title': song_name['title'],
-            'artist': song_name['artist'], 
+            'title': title,
+            'artist': artist, 
             'link': song['link'],
+            'youtube_link': youtube_link,
+            'thumbnail': youtube_thumbnail,
+            'snippet': lyrics_snippet,
         }
         songs.append(d)
-        youtube_query = song_name['artist'] + ' ' + song_name['title']
-        print(youtube_query)
-        links.append(youtube_link_scraper.get_youtube_link(youtube_query))
-        print(youtube_link_scraper.get_youtube_link(youtube_query))
     
-    print(links)
     return 'Top song: ' + songs[0]['title'] # TODO: Create template to return
 
 

@@ -44,6 +44,8 @@ def _match_query(query, lyrics):
         if curr_score > max_score:
             max_score = curr_score
             max_ind = i
+        if max_score == 100: # already found match
+            break
 
     return (max_ind, chunk_len) # Return index of lyrics (word #) where query matches
 

@@ -18,7 +18,6 @@ def search_lyrics():
     query = request.form['query']
     results = google_scraper.search_list(query, 10) # MAGIC NUMBER
     songs = []
-
     for song in results:
         artist, title = util.split_name_str(song['title'])
         youtube_query = artist + ' ' + title
@@ -35,8 +34,7 @@ def search_lyrics():
         songs.append(d)
 
     print(songs)
-
-    #return 'Top song: ' + songs[0]['title'] # TODO: Create template to return
+    return songs[0]['title']
 
 
 if __name__ == "__main__":

@@ -35,7 +35,6 @@ def search_lyrics():
         songs.append(d)
 
     print(songs)
-    
 
     #return 'Top song: ' + songs[0]['title'] # TODO: Create template to return
 

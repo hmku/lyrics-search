@@ -12,3 +12,5 @@ def get_youtube_link(query_input):
 
 #If the video URL is https://www.youtube.com/watch?v=xxxxxxxxxxxx
 #The thumbnail URL is https://i.ytimg.com/vi/xxxxxxxxxxxx/maxresdefault.jpg
+
+

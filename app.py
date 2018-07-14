@@ -1,8 +1,8 @@
 from flask import Flask, render_template, request
-import engine
 import util
 import youtube_scraper
 import snippet
+import google_scraper
 
 
 app = Flask(__name__)
@@ -16,10 +16,10 @@ def main():
 @app.route('/search-results', methods=['POST'])
 def search_lyrics():
     query = request.form['query']
-    results = engine.get_search_results(query)
+    results = google_scraper.search_list(query, 10) # MAGIC NUMBER
     songs = []
 
-    for song in results['items']:
+    for song in results:
         artist, title = util.split_name_str(song['title'])
         youtube_query = artist + ' ' + title
         youtube_link, youtube_thumbnail = youtube_scraper.get_youtube_info(youtube_query)
@@ -33,8 +33,11 @@ def search_lyrics():
             'snippet': lyrics_snippet,
         }
         songs.append(d)
+
+    print(songs)
     
-    return 'Top song: ' + songs[0]['title'] # TODO: Create template to return
+
+    #return 'Top song: ' + songs[0]['title'] # TODO: Create template to return
 
 
 if __name__ == "__main__":

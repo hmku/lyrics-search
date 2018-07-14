@@ -20,3 +20,5 @@ def get_youtube_info(input):
     page = urllib.request.urlopen("http://www.youtube.com/results?" + query)
     top_video_id = re.search(r'href=\"\/watch\?v=(.{11})', page.read().decode())
     return (_get_video_link(top_video_id), _get_thumbnail_link(top_video_id))
+
+print(get_youtube_info("let me down slowly"))

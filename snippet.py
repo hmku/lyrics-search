@@ -71,8 +71,3 @@ def get_snippet(query, link):
         offset += 1
 
     return (snippet, ind, chunk_len)
-
-
-# Test the snippet finder
-snippet, ind, chunk_len = get_snippet('i hate goodbyes', 'https://www.azlyrics.com/lyrics/owlcity/fireflies.html')
-print('\n'.join([' '.join(line) for line in snippet]))

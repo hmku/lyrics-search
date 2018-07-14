@@ -18,5 +18,5 @@ def _get_thumbnail_link(video_id):
 def get_youtube_info(input):
     query = urllib.parse.urlencode({"search_query" : input})
     page = urllib.request.urlopen("http://www.youtube.com/results?" + query)
-    top_video_id = re.search(r'href=\"\/watch\?v=(.{11})', page.read().decode())
+    top_video_id = (re.search(r'href=\"\/watch\?v=(.{11})', page.read().decode())).group(1)
     return (_get_video_link(top_video_id), _get_thumbnail_link(top_video_id))

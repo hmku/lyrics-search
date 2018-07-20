@@ -1,0 +1,84 @@
+{
+    "kind": "youtube#videoListResponse",
+    "etag": "\"XI7nbFXulYBIpL0ayR_gDh3eu1k/RinHK-V-NDflxJ_emUvVhE2c724\"",
+    "pageInfo": {
+     "totalResults": 1,
+     "resultsPerPage": 1
+    },
+    "items": [
+     {
+      "kind": "youtube#video",
+      "etag": "\"XI7nbFXulYBIpL0ayR_gDh3eu1k/6sJc4ktQowTe7ho_Axd2pfTXnLc\"",
+      "id": "60ItHLz5WEA",
+      "snippet": {
+       "publishedAt": "2015-12-04T07:00:30.000Z",
+       "channelId": "UCJrOtniJ0-NWz37R30urifQ",
+       "title": "Alan Walker - Faded",
+       "description": "Listen to ”Faded” on Spotify: http://bit.ly/faded_spotify\nListen to ”Faded” via other plattforms: https://AlanWalker.lnk.to/faded\n\nMerch available at http://bit.ly/AlanWalkerMerch\n\nFacebook: http://bit.ly/AlanWalker_Facebook\nInstagram: http://bit.ly/AlanWalker_Instagram\nTwitter: http://bit.ly/AlanWalker_Twitter\n\nVocalist: Iselin Solheim\nVideo Location: Tallinn, Estonia\nVideo produced by: Bror Bror\nDirectors: Rikkard & Tobias Häggbom\nD.O.P: Rikkard Häggbom\nEdit and grading: Bror Bror\nActor: Shahab Salehi\n\n© 2015 Alan Walker & MER Musikk\n℗ 2015 Sony Music Entertainment Sweden AB",
+       "thumbnails": {
+        "default": {
+         "url": "https://i.ytimg.com/vi/60ItHLz5WEA/default.jpg",
+         "width": 120,
+         "height": 90
+        },
+        "medium": {
+         "url": "https://i.ytimg.com/vi/60ItHLz5WEA/mqdefault.jpg",
+         "width": 320,
+         "height": 180
+        },
+        "high": {
+         "url": "https://i.ytimg.com/vi/60ItHLz5WEA/hqdefault.jpg",
+         "width": 480,
+         "height": 360
+        },
+        "standard": {
+         "url": "https://i.ytimg.com/vi/60ItHLz5WEA/sddefault.jpg",
+         "width": 640,
+         "height": 480
+        },
+        "maxres": {
+         "url": "https://i.ytimg.com/vi/60ItHLz5WEA/maxresdefault.jpg",
+         "width": 1280,
+         "height": 720
+        }
+       },
+       "channelTitle": "Alan Walker",
+       "tags": [
+        "Alan Walker",
+        "DJ Walkzz",
+        "K-391",
+        "House",
+        "Techno"
+       ],
+       "categoryId": "10",
+       "liveBroadcastContent": "none",
+       "localized": {
+        "title": "Alan Walker - Faded",
+        "description": "Listen to ”Faded” on Spotify: http://bit.ly/faded_spotify\nListen to ”Faded” via other plattforms: https://AlanWalker.lnk.to/faded\n\nMerch available at http://bit.ly/AlanWalkerMerch\n\nFacebook: http://bit.ly/AlanWalker_Facebook\nInstagram: http://bit.ly/AlanWalker_Instagram\nTwitter: http://bit.ly/AlanWalker_Twitter\n\nVocalist: Iselin Solheim\nVideo Location: Tallinn, Estonia\nVideo produced by: Bror Bror\nDirectors: Rikkard & Tobias Häggbom\nD.O.P: Rikkard Häggbom\nEdit and grading: Bror Bror\nActor: Shahab Salehi\n\n© 2015 Alan Walker & MER Musikk\n℗ 2015 Sony Music Entertainment Sweden AB"
+       }
+      },
+      "contentDetails": {
+       "duration": "PT3M33S",
+       "dimension": "2d",
+       "definition": "hd",
+       "caption": "false",
+       "licensedContent": true,
+       "projection": "rectangular"
+      },
+      "status": {
+       "uploadStatus": "processed",
+       "privacyStatus": "public",
+       "license": "youtube",
+       "embeddable": true,
+       "publicStatsViewable": true
+      },
+      "statistics": {
+       "viewCount": "1796829076",
+       "likeCount": "11871917",
+       "dislikeCount": "321781",
+       "favoriteCount": "0",
+       "commentCount": "744084"
+      }
+     }
+    ]
+   }

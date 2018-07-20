@@ -7,6 +7,8 @@
  
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
  
+    <link href="http://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/jumbotron-narrow.css" rel="stylesheet">
+ 
  
 </head>
  
@@ -18,9 +20,9 @@
                 <ul class="nav nav-pills pull-right">
                     <li role="presentation" class="active"><a href="#">Home</a>
                     </li>
-                    <li role="presentation"><a href="#">Sign In</a>
+                    <li role="presentation"><a href="#">Your Lyrics Here!</a>
                     </li>
-                    <li role="presentation"><a href="https://github.com/hmku/lyrics-search">About</a>
+                    <li role="presentation"><a href="showSignUp">Sign Up</a>
                     </li>
                 </ul>
             </nav>
@@ -28,7 +30,7 @@
         </div>
         
         <div class="jumbotron">
-            <h1>Lyrics Search</h1>
+            <h1>Bucket List App</h1>
             <form action="/search-results" method="POST">
             <label for="inputName" class="sr-only">Name</label>
             <input type="text" name="query" id="query" class="form-control" placeholder="Enter your lyrics" required autofocus>

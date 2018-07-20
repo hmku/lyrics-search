@@ -16,25 +16,24 @@ def main():
 
 @app.route('/search-results', methods=['POST'])
 def search_lyrics():
+    num_results = 10
     query = request.form['query']
-    results = google_scraper.search_list(query, 10) # MAGIC NUMBER
-    songs = []
-    for song in results:
-        artist, title = util.split_name_str(song['title'])
-        youtube_query = artist + ' ' + title
-        youtube_link, youtube_thumbnail = youtube_scraper.get_youtube_info(youtube_query)
+    lyrics_results = google_scraper.search_list(query, num_results, 'azlyrics')
+    youtube_results = google_scraper.search_list(query, num_results, 'youtube')
+    song_info = []
+    for description, youtube_data in zip(lyrics_results, youtube_results):
+        artist, title = util.split_name_str(description['title'])
         d = {
             'title': title,
             'artist': artist, 
-            'link': song['link'],
-            'youtube_link': youtube_link,
-            'thumbnail': youtube_thumbnail,
-            'snippet': song['snippet'],
+            'link': description['link'],
+            'youtube_link': youtube_data['link'],
+            'thumbnail': youtube_data['thumbnail'],
+            'snippet': description['snippet'],
         }
-        songs.append(d)
-
-    print(songs)
-    return songs[0]['title']
+        song_info.append(d)
+    print(song_info)
+    return song_info[0]['title']
 
 
 if __name__ == "__main__":

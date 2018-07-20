@@ -26,11 +26,14 @@ def _parse_results(html, keyword):
     for result in result_block:
         link = result.find('a', href=True)
         title = result.find('h3', attrs={'class': 'r'})
+        snippet = result.find('span', attrs={'class': 'st'})
         if link and title:
             link = link['href']
             title = title.get_text()
+            if snippet:
+                snippet = snippet.get_text()
             if link != '#':
-                found_results.append({'title': title, 'link': link})
+                found_results.append({'title': title, 'link': link, 'snippet': snippet})
     return found_results
 
 

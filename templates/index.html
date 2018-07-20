@@ -2,71 +2,54 @@
 <html lang="en">
  
 <head>
-    <title>Python Flask Bucket List App</title>
  
- 
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
- 
-    <link href="http://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/jumbotron-narrow.css" rel="stylesheet">
- 
- 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Lyrics Search</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+
+    <!-- Custom fonts  -->
+    <link href="../static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../static/css/custom.css">
+
 </head>
  
-<body>
+<body class="bg-primary">
  
     <div class="container">
+
         <div class="header">
-            <nav>
-                <ul class="nav nav-pills pull-right">
-                    <li role="presentation" class="active"><a href="#">Home</a>
-                    </li>
-                    <li role="presentation"><a href="#">Your Lyrics Here!</a>
-                    </li>
-                    <li role="presentation"><a href="showSignUp">Sign Up</a>
-                    </li>
-                </ul>
-            </nav>
-            <h3 class="text-muted">Python Flask App</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="text-white">Lyrics Search</h3>
+                </div>
+                <div class="col-md-6">
+                    <span class="pull-right">
+                        <h2> <a class="text-gray fa fa-github" target="_blank" href="https://github.com/hmku/lyrics-search"></a></h2>
+                    </span>
+                </div>
+            </div>
         </div>
-        
-        <div class="jumbotron">
-            <h1>Bucket List App</h1>
+
+        <div id="search">
             <form action="/search-results" method="POST">
-            <label for="inputName" class="sr-only">Name</label>
-            <input type="text" name="query" id="query" class="form-control" placeholder="Enter your lyrics" required autofocus>
-            <p> <button type="submit" class="btn btn-primary btn-lg">Search</button> </p>
+                <input type="search" value="" placeholder="enter lyrics here" onclick=""/>
+                <button type="submit" name="query" id="query" class="btn btn-primary"><span class="fa fa-search mr-2"></span>Search</button>
             </form>
         </div>
- 
-        <div class="row marketing">
-            <div class="col-lg-6">
-                <h4>Bucket List</h4>
-                <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
- 
-                <h4>Bucket List</h4>
-                <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
- 
-                <h4>Bucket List</h4>
-                <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-            </div>
- 
-            <div class="col-lg-6">
-                <h4>Bucket List</h4>
-                <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
- 
-                <h4>Bucket List</h4>
-                <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
- 
-                <h4>Bucket List</h4>
-                <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-            </div>
-        </div>
- 
-        <footer class="footer">
-            <p>&copy; Company 2015</p>
-        </footer>
- 
+
     </div>
+
+    <footer class="footer">
+        <p class="text-white">Created by Harrison Ku and Vincent Xu</p>
+    </footer>
+
 </body>
  
 </html>

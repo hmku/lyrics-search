@@ -21,6 +21,10 @@ def search_lyrics():
     for description in lyrics_results:
         artist, title = util.split_name_str(description['title'])
         youtube_link, thumbnail = google_engine.get_youtube_result(artist + ' ' + title)
+
+        if youtube_link is None: # Reached maximum quota for Google API
+            return render_template('error.html')
+        
         d = {
             'title': title,
             'artist': artist, 
@@ -30,6 +34,7 @@ def search_lyrics():
             'snippet': description['snippet'],
         }
         song_info.append(d)
+        
     print(song_info)
     return song_info[0]['title']
 

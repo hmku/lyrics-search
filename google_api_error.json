@@ -1,0 +1,16 @@
+{
+    "error": 
+        {
+            "errors": 
+            [
+                {
+                    "domain": "usageLimits", 
+                    "reason": "dailyLimitExceeded", 
+                    "message": "This API requires billing to be enabled on the project. Visit https://console.developers.google.com/billing?project=584972668291 to enable billing.", 
+                    "extendedHelp": "https://console.developers.google.com/billing?project=584972668291"
+                }
+            ], 
+            "code": 403, 
+            "message": "This API requires billing to be enabled on the project. Visit https://console.developers.google.com/billing?project=584972668291 to enable billing."
+        }
+}

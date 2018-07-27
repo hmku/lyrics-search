@@ -23,6 +23,8 @@ def get_youtube_result(input): # Gets link and thumbnail of first result
         }
     )
     results = r.json() # Loads json into dictionary
+    if results.get('error') is not None: # Reached maximum quota for Google API
+        return None, None
     link = results['items'][0]['link']
     return link, _get_thumbnail(link)
 

@@ -16,7 +16,11 @@ def get_lyrics_results(input):
 def get_youtube_result(input): # Gets link and thumbnail of first result
     r = requests.get(
         BASE_URL.format(key=GOOGLE_API_KEY, cx=YOUTUBE_CX, query=input) + 
-        '&fields=items(link)'
+        '&fields=items(link)',
+        headers={
+            'Accept-Encoding': 'gzip',
+            'User-Agent': 'engine(gzip)'
+        }
     )
     results = r.json() # Loads json into dictionary
     link = results['items'][0]['link']

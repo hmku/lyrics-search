@@ -1,9 +1,6 @@
 from flask import Flask, render_template, request, url_for
 import util
-import youtube_scraper
-import snippet
-import google_scraper
-import engine
+import youtube_scraper, google_scraper, google_engine
 import os
 
 
@@ -23,7 +20,7 @@ def search_lyrics():
     song_info = []
     for description in lyrics_results:
         artist, title = util.split_name_str(description['title'])
-        youtube_link, thumbnail = engine.get_youtube_result(artist + ' ' + title)
+        youtube_link, thumbnail = google_engine.get_youtube_result(artist + ' ' + title)
         d = {
             'title': title,
             'artist': artist, 

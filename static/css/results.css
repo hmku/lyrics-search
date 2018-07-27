@@ -51,11 +51,6 @@ body {
     color: rgba(255, 255, 255, 0.623);
   }
   
-  a:focus, a:hover, a:active {
-    color: #fff;
-    text-decoration: none;
-  }
-  
   #search {
     position: fixed;
     top: 42%;
@@ -109,11 +104,30 @@ body {
   }
 
 .jumbotron {
-     min-height: 600px; 
-     min-width: 600px;
-     font-size: 14px;
+    min-height: 600px; 
+    min-width: 600px;
+    font-size: 14px;
 }
 
 .sizer {
     width: 300px;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.623);
+}
+
+a:focus, a:hover, a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.formatter {
+  display: flex;
+}
+
+.center {
+  position: relative;
+  left: 40px;
 }

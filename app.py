@@ -3,6 +3,7 @@ import util
 import youtube_scraper
 import snippet
 import google_scraper
+import engine
 import os
 
 
@@ -19,16 +20,16 @@ def search_lyrics():
     num_results = 10
     query = request.form['query']
     lyrics_results = google_scraper.search_list(query, num_results, 'azlyrics')
-    youtube_results = google_scraper.search_list(query, num_results, 'youtube')
     song_info = []
-    for description, youtube_data in zip(lyrics_results, youtube_results):
+    for description in lyrics_results:
         artist, title = util.split_name_str(description['title'])
+        youtube_link, thumbnail = engine.get_youtube_result(artist + ' ' + title)
         d = {
             'title': title,
             'artist': artist, 
             'link': description['link'],
-            'youtube_link': youtube_data['link'],
-            'thumbnail': youtube_data['thumbnail'],
+            'youtube_link': youtube_link,
+            'thumbnail': thumbnail,
             'snippet': description['snippet'],
         }
         song_info.append(d)

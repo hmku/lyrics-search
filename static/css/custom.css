@@ -41,6 +41,20 @@ h6 {
   padding: 12px 20px;
 }
 
+.btn-secondary {
+  background-color: #1A1E2F;
+  border-color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.85);
+  padding: 12px 20px;
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+  background-color: #1A1E2F;
+  border-color: #fff;
+  color: #fff;
+  padding: 12px 20px;
+}
+
 a {
   color: rgba(255, 255, 255, 0.623);
 }
@@ -102,3 +116,11 @@ a:focus, a:hover, a:active {
   text-align: left;
 }
 
+.error {
+  position: fixed;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  text-align: center;
+}

@@ -47,6 +47,19 @@ body {
     padding: 12px 20px;
   }
   
+  .btn-secondary {
+    background-color: #1A1E2F;
+    border-color: #1A1E2F;
+    color: rgba(255, 255, 255, 0.85);
+    padding: 12px 20px;
+  }
+  
+  .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+    background-color: #0f111c;
+    border-color: #0f111c;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 12px 20px;
+  }
   a {
     color: rgba(255, 255, 255, 0.623);
   }

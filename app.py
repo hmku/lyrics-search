@@ -18,6 +18,7 @@ def search_lyrics():
     query = request.form['query']
     lyrics_results = google_scraper.search_list(query, num_results, 'azlyrics')
     song_info = []
+<<<<<<< HEAD
 
     try:
         for description in lyrics_results:
@@ -47,6 +48,22 @@ def search_lyrics():
 @app.route('/error', methods=['GET'])
 def error():
     return render_template('error.html')
+=======
+    for description in lyrics_results:
+        artist, title = util.split_name_str(description['title'])
+        youtube_link, thumbnail = google_engine.get_youtube_result(artist + ' ' + title)
+        d = {
+            'title': title,
+            'artist': artist, 
+            'link': description['link'],
+            'youtube_link': youtube_link,
+            'thumbnail': thumbnail,
+            'snippet': description['snippet'],
+        }
+        song_info.append(d)
+    print(song_info)
+    return render_template('results.html')
+>>>>>>> results page
 
 
 if __name__ == "__main__":

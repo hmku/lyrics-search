@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, url_for, redirect
 import util
+from jinja2 import Template
 import youtube_scraper, google_scraper, google_engine
 import os
 
@@ -32,7 +33,7 @@ def search_lyrics():
                 'title': title,
                 'artist': artist, 
                 'link': description['link'],
-                'youtube_id': youtube_link[-11:],
+                'youtube': 'https://www.youtube.com/embed/' + youtube_link[-11:] + '?rel=0' ,
                 'thumbnail': thumbnail,
                 'snippet': description['snippet'],
             }
@@ -43,9 +44,7 @@ def search_lyrics():
 
     else:
         print(song_info)
-        return render_template('results.html', title = song_info[0]['artist'] + ' - ' + song_info[0]['title'], 
-                                link = song_info[0]['link'], youtube = 'https://www.youtube.com/embed/' + song_info[0]['youtube_id'] + '?rel=0',
-                                snippet = ' ...' + song_info[0]['snippet'] + '... ')
+        return render_template('results.html', song_info=song_info)
 
 
 @app.route('/error', methods=['GET'])

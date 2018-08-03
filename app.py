@@ -30,8 +30,7 @@ def search_lyrics():
                 raise RuntimeError('Reached maximum quota for Google API!')
             
             d = {
-                'title': title,
-                'artist': artist, 
+                'title': artist + ' - ' + title,
                 'link': description['link'],
                 'youtube': 'https://www.youtube.com/embed/' + youtube_link[-11:] + '?rel=0' ,
                 'thumbnail': thumbnail,

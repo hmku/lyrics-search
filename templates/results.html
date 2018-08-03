@@ -43,7 +43,7 @@
             {% for song in song_info %}
                 <div class="formatter">
                     <div class="embed-responsive embed-responsive-16by9 sizer">
-                        <iframe class="embed-responsive-item" src= {{ song.youtube_id }} allowfullscreen></iframe>
+                        <iframe class="embed-responsive-item" src= {{ song.youtube }} allowfullscreen></iframe>
                     </div>
                     <div class="center">
                         <h4><a href= {{ song.link }} style="color:black">{{ song.title }}</a></h4>

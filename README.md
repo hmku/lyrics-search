@@ -7,4 +7,4 @@ Simply enter in lyrics into the text box on the home page and Lyrics Search will
 
 ![screenshot](http://tinyimg.io/i/86eeoMS.png) 
 ---
-<sup>Created by Vincent Xu and Harrison Ku</sup>
+<sup>Updated 08/02/2018</sup>

@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, url_for, redirect
 import util
 from jinja2 import Template
-import youtube_scraper, google_scraper, google_engine
+import google_scraper, google_engine
 import os
 
 

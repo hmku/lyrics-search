@@ -5,7 +5,6 @@ GOOGLE_API_KEY = 'AIzaSyCrBdeuM-QHwP-tRxlF8Il9XB9WgBcnOro'
 BASE_URL = 'https://www.googleapis.com/customsearch/v1/siterestrict?key={key}&cx={cx}&q={query}'
 AZLYRICS_CX = '004866776918846137660:g-xyfvdi1va' # AZLyrics search engine code
 YOUTUBE_CX = '004866776918846137660:kta603plkba' # YouTube search engine code
-BASE_THUMBNAIL_URL = 'https://i.ytimg.com/vi/{id}/maxresdefault.jpg'
 
 
 def get_lyrics_results(input):
@@ -13,7 +12,7 @@ def get_lyrics_results(input):
     results = r.json() # Loads json into dictionary
     return results
 
-def get_youtube_result(input): # Gets link and thumbnail of first result
+def get_youtube_result(input): # Gets link of first result
     r = requests.get(
         BASE_URL.format(key=GOOGLE_API_KEY, cx=YOUTUBE_CX, query=input) + 
         '&fields=items(link)',
@@ -24,10 +23,6 @@ def get_youtube_result(input): # Gets link and thumbnail of first result
     )
     results = r.json() # Loads json into dictionary
     if results.get('error') is not None: # Reached maximum quota for Google API
-        return None, None
+        return None
     link = results['items'][0]['link']
-    return link, _get_thumbnail(link)
-
-def _get_thumbnail(link):
-    id = link.split('/watch?v=')[1]
-    return BASE_THUMBNAIL_URL.format(id=id)
+    return link

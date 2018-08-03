@@ -23,7 +23,7 @@ def search_lyrics():
     try:
         for description in lyrics_results:
             artist, title = util.split_name_str(description['title'])
-            youtube_link, thumbnail = google_engine.get_youtube_result(artist + ' ' + title)
+            youtube_link = google_engine.get_youtube_result(artist + ' ' + title)
             if youtube_link is None: # Reached maximum quota for Google API
                 raise RuntimeError('Reached maximum quota for Google API!')
             
@@ -31,7 +31,6 @@ def search_lyrics():
                 'title': artist + ' - ' + title,
                 'link': description['link'],
                 'youtube': 'https://www.youtube.com/embed/' + youtube_link[-11:] + '?rel=0' ,
-                'thumbnail': thumbnail,
                 'snippet': description['snippet'],
             }
             song_info.append(d)

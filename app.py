@@ -32,7 +32,7 @@ def search_lyrics():
                 'title': title,
                 'artist': artist, 
                 'link': description['link'],
-                'youtube_link': youtube_link,
+                'youtube_id': youtube_link[-11:],
                 'thumbnail': thumbnail,
                 'snippet': description['snippet'],
             }
@@ -43,7 +43,9 @@ def search_lyrics():
 
     else:
         print(song_info)
-        return render_template('results.html')
+        return render_template('results.html', title = song_info[0]['artist'] + ' - ' + song_info[0]['title'], 
+                                link = song_info[0]['link'], youtube = 'https://www.youtube.com/embed/' + song_info[0]['youtube_id'] + '?rel=0',
+                                snippet = ' ...' + song_info[0]['snippet'] + '... ')
 
 
 @app.route('/error', methods=['GET'])

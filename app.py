@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, url_for, redirect
 import util
+from jinja2 import Template
 import youtube_scraper, google_scraper, google_engine
 import os
 
@@ -27,10 +28,9 @@ def search_lyrics():
                 raise RuntimeError('Reached maximum quota for Google API!')
             
             d = {
-                'title': title,
-                'artist': artist, 
+                'title': artist + ' - ' + title,
                 'link': description['link'],
-                'youtube_link': youtube_link,
+                'youtube': 'https://www.youtube.com/embed/' + youtube_link[-11:] + '?rel=0' ,
                 'thumbnail': thumbnail,
                 'snippet': description['snippet'],
             }
@@ -41,7 +41,7 @@ def search_lyrics():
 
     else:
         print(song_info)
-        return str(song_info)
+        return render_template('results.html', song_info=song_info)
 
 
 @app.route('/error', methods=['GET'])

@@ -62,6 +62,6 @@ def search_list(keywords, number_of_results, domain):
         for result in results:
             data.append(result)
     except Exception as e:
-        return e
+        print(e)
     
     return data

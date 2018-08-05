@@ -33,7 +33,7 @@ def search_lyrics():
                     'title': artist + ' - ' + title,
                     'link': description['link'],
                     'youtube': 'https://www.youtube.com/embed/' + youtube_link[-11:] + '?rel=0' ,
-                    'snippet': description['snippet'],
+                    'snippet': util.filter_snippet(description['snippet'], title, artist),
                 }
                 song_info.append(d)
 

@@ -26,7 +26,12 @@ def search_lyrics():
         for description in lyrics_results:
             valid_title = 'Lyrics -'
             if description['title'].find(valid_title) != -1:
-                artist, title = util.split_name_str(description['title'])
+                try:
+                    artist, title = util.split_name_str(description['title'])
+                except ValueError: # Handle error in util.split_name_str (usually when AZLyrics result is not a song)
+                                   # Example: query = 'lyrics search'
+                    continue # Skip to next result
+
                 youtube_link = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' # Does not use Google API
                 if youtube_link is None: # Reached maximum quota for Google API, will not happen in test_app
                     raise RuntimeError('Reached maximum quota for Google API!')
@@ -39,7 +44,7 @@ def search_lyrics():
                 }
                 song_info.append(d)
 
-    except RuntimeError: # Handle error
+    except RuntimeError: # Handle Google API error
         return redirect('/error')
 
     else:

@@ -20,8 +20,8 @@ def search_lyrics():
     try:
         lyrics_results = google_scraper.search_list(query, num_results, 'azlyrics')
     except Exception: # Too many requests to Google
-        return redirect('/error') 
-        
+        return redirect('/error-scraper') 
+
     song_info = []
 
     try:
@@ -47,16 +47,21 @@ def search_lyrics():
                 song_info.append(d)
 
     except RuntimeError: # Handle Google API error
-        return redirect('/error')
+        return redirect('/error-api')
 
     else:
         print(song_info)
         return render_template('results.html', song_info=song_info, query=query)
 
 
-@app.route('/error', methods=['GET'])
-def error():
-    return render_template('error.html')
+@app.route('/error-scraper', methods=['GET'])
+def error_scraper():
+    return render_template('error_scraper.html')
+
+
+@app.route('/error-api', methods=['GET'])
+def error_api():
+    return render_template('error_api.html')
 
 
 if __name__ == "__main__":

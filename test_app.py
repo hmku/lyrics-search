@@ -1,0 +1,56 @@
+# Used to test the Flask app without wasting Google API queries
+
+from flask import Flask, render_template, request, url_for, redirect
+import util
+from jinja2 import Template
+import google_scraper, google_engine
+import os
+
+
+test_app = Flask(__name__)
+
+
+@test_app.route('/')
+def main():
+    return render_template('index.html')
+
+
+@test_app.route('/search-results', methods=['POST'])
+def search_lyrics():
+    num_results = 10
+    query = request.form['query']
+    lyrics_results = google_scraper.search_list(query, num_results, 'azlyrics')
+    song_info = []
+
+    try:
+        for description in lyrics_results:
+            valid_title = 'Lyrics -'
+            if description['title'].find(valid_title) != -1:
+                artist, title = util.split_name_str(description['title'])
+                youtube_link = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' # Does not use Google API
+                if youtube_link is None: # Reached maximum quota for Google API, will not happen in test_app
+                    raise RuntimeError('Reached maximum quota for Google API!')
+                
+                d = {
+                    'title': artist + ' - ' + title,
+                    'link': description['link'],
+                    'youtube': 'https://www.youtube.com/embed/' + youtube_link[-11:] + '?rel=0' ,
+                    'snippet': util.filter_snippet(description['snippet'], title, artist),
+                }
+                song_info.append(d)
+
+    except RuntimeError: # Handle error
+        return redirect('/error')
+
+    else:
+        print(song_info)
+        return render_template('results.html', song_info=song_info)
+
+
+@test_app.route('/error', methods=['GET'])
+def error():
+    return render_template('error.html')
+
+
+if __name__ == "__main__":
+    test_app.run()

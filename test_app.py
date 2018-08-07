@@ -19,7 +19,11 @@ def main():
 def search_lyrics():
     num_results = 10
     query = request.form['query']
-    lyrics_results = google_scraper.search_list(query, num_results, 'azlyrics')
+    try:
+        lyrics_results = google_scraper.search_list(query, num_results, 'azlyrics')
+    except Exception: # Too many requests to Google
+        return redirect('/error') 
+
     song_info = []
 
     try:

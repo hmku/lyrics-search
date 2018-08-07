@@ -38,24 +38,37 @@
         </div>
 
         <div class="jumbotron">
-            {% for song in song_info %}
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src= {{ song.youtube }} allowfullscreen></iframe>
-                            </div>
+            {% if song_info|length == 0 %}
+            <div class="text-center">
+                <h5>No results for: <span class="text-secondary">{{ query }}</span></h5>
+            </div>
+
+            {% else %}
+                <div>
+                    <h5>Results for: <span class="text-secondary">{{ query }}</span></h5>
+                </div> 
+                <br>
+                {% for song in song_info %}
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src= {{ song.youtube }} allowfullscreen></iframe>
                         </div>
-                        <div class="col-md-8">
-                            <div class="center">
-                                <h4><a href= {{ song.link }} style="color:black">{{ song.title }}</a></h4>
-                                <div>
-                                    <p>{{ song.snippet }}</p>
-                                </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="center">
+                            <h4><a href= {{ song.link }} style="color:black">{{ song.title }}</a></h4>
+                            <div>
+                                <p>{{ song.snippet }}</p>
                             </div>
                         </div>
                     </div>
-            <hr class="my-4">
-            {% endfor %}
+                </div>
+                <hr class="my-4">
+                {% endfor %}
+
+            {% endif %}
+
             <br>
             <div class="text-center">
                 <a class="btn btn-secondary" href="/">

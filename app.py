@@ -42,7 +42,7 @@ def search_lyrics():
 
     else:
         print(song_info)
-        return render_template('results.html', song_info=song_info)
+        return render_template('results.html', song_info=song_info, query=query)
 
 
 @app.route('/error', methods=['GET'])

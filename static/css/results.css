@@ -32,6 +32,10 @@ body {
   .text-primary {
     color: #FFF !important;
   }
+
+  .text-secondary {
+    color: #1A1E2F
+  }
   
   .btn-primary {
     background-color: #1A1E2F;
@@ -117,9 +121,10 @@ body {
   }
 
 .jumbotron {
-    min-height: 600px; 
+    min-height: 600px;
     min-width: 600px;
     font-size: 14px;
+    padding: 50px !important;
 }
 
 .sizer {

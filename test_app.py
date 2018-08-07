@@ -44,7 +44,7 @@ def search_lyrics():
 
     else:
         print(song_info)
-        return render_template('results.html', song_info=song_info)
+        return render_template('results.html', song_info=song_info, query=query)
 
 
 @test_app.route('/error', methods=['GET'])

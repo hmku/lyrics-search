@@ -34,7 +34,7 @@ body {
   }
 
   .text-secondary {
-    color: rgba(255, 255, 255, 0.623) !important;
+    color: #6c757d !important;
   }
   
   .btn-primary {
@@ -106,7 +106,7 @@ a:focus, a:hover, a:active {
 }
 
 .result:focus, .result:hover, .result:active {
-  color: rgba(255, 255, 255, 0.623);
+  color: #6c757d;
   text-decoration: none;
 }
 

@@ -135,12 +135,7 @@ a:focus, a:hover, a:active {
   text-decoration: none;
 }
 
-
-.formatter {
-  display: flex;
-}
-
 .center {
   position: relative;
-  left: 40px;
+  left: 10px;
 }

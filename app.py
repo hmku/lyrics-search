@@ -23,10 +23,9 @@ def search_lyrics():
         return redirect('/error-scraper') 
 
     song_info = []
-
     try:
         for description in lyrics_results:
-            valid_title = 'Lyrics -'
+            valid_title = 'Lyrics'
             if description['title'].find(valid_title) != -1:
                 try:
                     artist, title = util.split_name_str(description['title'])
@@ -50,7 +49,7 @@ def search_lyrics():
         return redirect('/error-api')
 
     else:
-        print(song_info)
+        #print(song_info)
         return render_template('results.html', song_info=song_info, query=query)
 
 

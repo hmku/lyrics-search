@@ -1,7 +1,7 @@
 def split_name_str(title):
-    if title.find('- AZLyrics') != -1:
-        title = title[:-11] # Remove the ' - AZlyrics' part
-    name = title.split(' Lyrics - ')
+    if title.find('AZLyrics.com') != -1:
+        title = title[:-21] # Remove the ' - AZlyrics' part
+    name = title.split(' - ')
     return tuple(name)
 
 def filter_snippet(snippet, title, artist):

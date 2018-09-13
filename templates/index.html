@@ -39,7 +39,7 @@
 
         <div id="search">
             <form action="/search-results" method="POST">
-                <input pattern="[a-zA-Z'0-9\s]+" type="search" value="" name="query" placeholder="enter lyrics here" onclick="" autocomplete="off" required
+                <input pattern="[a-zA-Z0-9\s]+" type="search" value="" name="query" placeholder="enter lyrics here" onclick="" autocomplete="off" required
                  oninvalid="this.setCustomValidity('Please enter lyrics with letters and numbers only!')" oninput="setCustomValidity('')"/>
                 <button type="submit" class="btn btn-primary"><span class="fa fa-search mr-2"></span>Search</button>
             </form>

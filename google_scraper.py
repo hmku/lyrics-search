@@ -29,7 +29,7 @@ def _parse_results(html, keyword):
     result_block = soup.find_all('div', attrs={'class': 'g'})
     for result in result_block:
         link = result.find('a', href=True)
-        title = result.find('h3', attrs={'class': 'r'})
+        title = result.find('h3')
         snippet = result.find('span', attrs={'class': 'st'})
         if link and title:
             link = link['href']
@@ -63,5 +63,4 @@ def search_list(keywords, number_of_results, domain):
             data.append(result)
     except Exception as e:
         raise e
-    
     return data
